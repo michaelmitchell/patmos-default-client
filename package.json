@@ -1,6 +1,6 @@
 {
   "name": "patmos-default-client",
-  "version": "1.0.1",
+  "version": "0.1.0",
   "description": "default client middleware for patmos",
   "homepage": "https://github.com/michaelmitchell/patmos-default-client",
   "repository": {
