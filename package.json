@@ -1,6 +1,6 @@
 {
   "name": "patmos-default-client",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "default client middleware for patmos",
   "homepage": "https://github.com/michaelmitchell/patmos-default-client",
   "repository": {
@@ -32,9 +32,7 @@
     }
   ],
   "main": "build/index.js",
-  "dependencies": {
-    "source-map-support": "^0.4.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-core": "^6.9.1",
