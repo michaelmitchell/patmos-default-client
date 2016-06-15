@@ -1,6 +1,6 @@
 {
   "name": "patmos-default-client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "default client middleware for patmos",
   "homepage": "https://github.com/michaelmitchell/patmos-default-client",
   "repository": {
@@ -33,7 +33,6 @@
   ],
   "main": "build/index.js",
   "dependencies": {
-    "babel-polyfill": "^6.9.1",
     "source-map-support": "^0.4.0"
   },
   "devDependencies": {
@@ -41,11 +40,12 @@
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-plugin-transform-runtime": "^6.9.0",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-stage-3": "^6.5.0"
   },
   "peerDependencies": {
-    "patmos": "^1.0.0"
+    "patmos": "^0.1.0"
   },
   "scripts": {
     "build": "./node_modules/babel-cli/bin/babel.js src -d build --source-maps=inline",
