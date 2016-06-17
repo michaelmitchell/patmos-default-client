@@ -44,9 +44,6 @@
     "chai": "^3.5.0",
     "mocha": "^2.5.3"
   },
-  "peerDependencies": {
-    "patmos": "^0.1.0"
-  },
   "scripts": {
     "build": "rm -rf ./build && ./node_modules/babel-cli/bin/babel.js src -d build --source-maps=inline",
     "build-and-watch": "rm -rf ./build && ./node_modules/babel-cli/bin/babel.js src -d build --watch --source-maps=inline",
