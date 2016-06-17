@@ -1,2 +1,4 @@
+.npm-debug.log
+coverage/
 build/
 node_modules/

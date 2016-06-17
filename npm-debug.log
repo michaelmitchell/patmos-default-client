@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v5.0.0/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v5.0.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'test:push-coverage' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 verbose run-script [ 'pretest:push-coverage',
+4 verbose run-script   'test:push-coverage',
+4 verbose run-script   'posttest:push-coverage' ]
+5 info lifecycle patmos-default-client@0.1.3~pretest:push-coverage: patmos-default-client@0.1.3
+6 silly lifecycle patmos-default-client@0.1.3~pretest:push-coverage: no script for pretest:push-coverage, continuing
+7 info lifecycle patmos-default-client@0.1.3~test:push-coverage: patmos-default-client@0.1.3
+8 verbose lifecycle patmos-default-client@0.1.3~test:push-coverage: unsafe-perm in lifecycle true
+9 verbose lifecycle patmos-default-client@0.1.3~test:push-coverage: PATH: /home/ubuntu/.nvm/versions/node/v5.0.0/lib/node_modules/npm/bin/node-gyp-bin:/home/ubuntu/michaelmitchell/patmos-default-client/node_modules/.bin:/home/ubuntu/.nvm/versions/node/v5.0.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+10 verbose lifecycle patmos-default-client@0.1.3~test:push-coverage: CWD: /home/ubuntu/michaelmitchell/patmos-default-client
+11 silly lifecycle patmos-default-client@0.1.3~test:push-coverage: Args: [ '-c',
+11 silly lifecycle   'cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js' ]
+12 silly lifecycle patmos-default-client@0.1.3~test:push-coverage: Returned: code: 1  signal: null
+13 info lifecycle patmos-default-client@0.1.3~test:push-coverage: Failed to exec test:push-coverage script
+14 verbose stack Error: patmos-default-client@0.1.3 test:push-coverage: `cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/home/ubuntu/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (/home/ubuntu/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:818:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid patmos-default-client@0.1.3
+16 verbose cwd /home/ubuntu/michaelmitchell/patmos-default-client
+17 error Linux 4.4.0-24-generic
+18 error argv "/home/ubuntu/.nvm/versions/node/v5.0.0/bin/node" "/home/ubuntu/.nvm/versions/node/v5.0.0/bin/npm" "run" "test:push-coverage"
+19 error node v5.0.0
+20 error npm  v3.3.6
+21 error code ELIFECYCLE
+22 error patmos-default-client@0.1.3 test:push-coverage: `cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js`
+22 error Exit status 1
+23 error Failed at the patmos-default-client@0.1.3 test:push-coverage script 'cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js'.
+23 error This is most likely a problem with the patmos-default-client package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+23 error You can get their info via:
+23 error     npm owner ls patmos-default-client
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

@@ -1,15 +1,46 @@
-var expect = require("chai").expect;
+import { expect } from 'chai';
+import client from '../src/index';
 
 describe("Example", function() {
-  it("says hello to the world", function() {
-    expect(1).to.equal(1);
-    expect(2).to.equal(2);
-    expect(3).to.equal(3);
+  it("should return something", async (done) => {
+    var req = client({
+      find: () => () => 1
+    });
+
+    try {
+      let res = await req();
+
+      expect(res).be.a('function');
+
+      let result = await res();
+
+      expect(result).to.equal(1);
+
+      done();
+    }
+    catch (e) {
+      done(e);
+    }
   });
 
-  it("likes bananas", function() {
-    expect(1).to.equal(1);
-    expect(2).to.equal(2);
-    expect(3).to.equal(3);
+  it("should return nothing", async (done) => {
+    var req = client({
+      find: () => {}
+    });
+
+    try {
+      let res = await req();
+
+      expect(res).be.a('function');
+
+      let result = await res();
+
+      expect(result).to.be.undefined;
+
+      done();
+    }
+    catch (e) {
+      done(e);
+    }
   });
 });
