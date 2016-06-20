@@ -1,5 +1,5 @@
-import { expect } from 'chai';
-import client from '../src/index';
+import { expect } from "chai";
+import client from "../src/index";
 
 describe("Example", function() {
   it("should return something", async (done) => {
@@ -10,7 +10,7 @@ describe("Example", function() {
     try {
       let res = await req();
 
-      expect(res).be.a('function');
+      expect(res).be.a("function");
 
       let result = await res();
 
@@ -31,7 +31,7 @@ describe("Example", function() {
     try {
       let res = await req();
 
-      expect(res).be.a('function');
+      expect(res).be.a("function");
 
       let result = await res();
 
