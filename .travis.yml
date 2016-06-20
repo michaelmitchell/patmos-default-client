@@ -5,6 +5,7 @@ node_js:
   - "5"
   - "4"
   - "0.12"
-branches:
-  only:
-    - master
+before_script:
+  - npm run snyk:auth  
+after_success:
+  - npm run test:cov
