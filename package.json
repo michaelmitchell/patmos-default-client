@@ -61,6 +61,7 @@
     "lint": "./node_modules/.bin/eslint src test",
       "lint:fix": "npm run lint -- --fix",
     "snyk": "./node_modules/.bin/snyk",
+      "snyk:monitor": "npm run snyk -- monitor",
       "snyk:test": "npm run snyk -- test",
       "snyk:wizard": "npm run snyk -- wizard",
     "pretest": "npm run snyk:test && npm run lint",
